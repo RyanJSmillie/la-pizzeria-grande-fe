@@ -1,0 +1,8 @@
+.mid-banner {
+  background-color: var(--color-primary);
+  border-top: 3px dashed var(--color-secondary);
+}
+
+.mid-title {
+    padding: 15px 0
+}

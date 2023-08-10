@@ -1,0 +1,27 @@
+.hero-img {
+  height: 90vh;
+  background-image: url("../../../assets/home-image.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.hero-content p {
+  font-size: 20px;
+}
+ .hero-content .phone-number {
+    text-decoration: underline;
+    font-weight: 700;
+ }
