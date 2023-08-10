@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,9 +16,29 @@
 
 .title {
   font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
 }
 
+.sub-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: var(--color-text);
+}
 
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 16px;
+}
 
 body {
   font-family: "Lato", sans-serif;
