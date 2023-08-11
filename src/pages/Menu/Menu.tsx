@@ -3,22 +3,24 @@ import React, { useEffect, useState } from "react";
 import "./Menu.css";
 
 import ListItem from "../../components/ListItem/ListItem";
+import { MenuItem } from "../../interfaces/Menu";
+
+const databaseUrl =
+  "https://la-pizzeria-grande-8def1-default-rtdb.europe-west1.firebasedatabase.app/Menu.json";
 
 const Menu = () => {
   const [menuData, setMenuData] = useState([]);
 
   useEffect(() => {
-    const databaseUrl =
-      "https://la-pizzeria-grande-8def1-default-rtdb.europe-west1.firebasedatabase.app/Menu.json";
 
     const doFetch = async () => {
       const res: Response = await fetch(databaseUrl);
-      const json = await res.json();
+      const json: MenuItem[] = await res.json();
       setMenuData(json);
     };
 
     doFetch();
-  });
+  }, [databaseUrl]);
 
   return (
     <div className="section">

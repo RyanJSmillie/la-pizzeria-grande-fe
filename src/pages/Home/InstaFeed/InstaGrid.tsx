@@ -15,7 +15,7 @@ const InstaGrid = ({ items }: InstaGridProps) => {
     <div className="grid-style">
       {items.map((item) => {
         return (
-          <img className="item-style" src={item.mediaUrl} alt="instagram" />
+          <img className="item-style" src={item.mediaUrl} alt="instagram" key={item.permalink} />
         );
       })}
     </div>

@@ -20,13 +20,13 @@ const Footer = () => {
             <NavLink className="footer-link" to={"/contact"}>
               Contact
             </NavLink>
-            <button className="footer-button">Book a table</button>
             <a
               className="footer-link"
               href="https://www.instagram.com/ryanjsmillie/"
             >
               Follow us on Instragram
             </a>
+            <button className="footer-button">Book a table</button>
           </div>
           <div className="footer-grid-item">
             <div className="footer-text-container">

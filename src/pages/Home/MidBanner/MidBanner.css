@@ -12,6 +12,7 @@
   .mid-title h1 {
     font-size: 45px;
     text-align: center;
+    padding-top: 25px;
   }
   
   .mid-title-box a {
@@ -24,11 +25,18 @@
     margin: 15px auto;
     border: 3px dashed var(--color-secondary);
     cursor: pointer;
+    border-radius: 5px;
   }
   
   
   @media screen and (max-width: 940px) {
     .mid-title-box {
       max-width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .mid-title h1 {
+      font-size: 30px;
     }
   }

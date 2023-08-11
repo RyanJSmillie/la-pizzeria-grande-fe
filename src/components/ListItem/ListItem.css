@@ -21,6 +21,11 @@
   height: 25vh;
   border-radius: 25px;
   object-fit: cover;
+  transition: transform .2s; 
+}
+
+.menu-image:hover {
+  transform: scale(1.1);
 }
 
 .list-items-no-border {
@@ -75,5 +80,35 @@
     align-items: center;
     color: var(--color-text);
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .list-items-no-border ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-items ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description-container {
+    padding-left: 0;
+    margin: auto;
+    max-width: 65vw;
+  }
+
+  li img {
+    margin: auto;
+  }
+
+  .title-menu {
+    text-align: center;
+  }
+
+  .sub-title-menu {
+    text-align: center;
   }
 }
