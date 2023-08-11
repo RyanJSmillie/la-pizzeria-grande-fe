@@ -39,6 +39,7 @@
 .description-container {
   padding-left: 25px;
   margin: auto;
+  max-width: 55vw;
 }
 
 .title-menu {
@@ -55,9 +56,10 @@
 }
 
 .price-menu {
-  align-items: center;
+  text-align: right;
   color: var(--color-text);
   font-size: 25px;
+  padding: 20px;
   margin: auto;
 }
 
