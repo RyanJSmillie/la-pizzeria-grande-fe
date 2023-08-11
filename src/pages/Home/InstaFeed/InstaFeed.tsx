@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import InstaGrid from "./InstaGrid";
+import { InstaImageId, InstaItem } from "../../../interfaces/InstaFeed";
 
 const InstaFeed = () => {
   const [instaItems, setInstaItems] = useState([]);
@@ -9,13 +10,13 @@ const InstaFeed = () => {
   const instaUrl = `https://graph.instagram.com/${userId}/media?access_token=${accessToken}`;
 
   useEffect(() => {
-    const fetchMedia = async (id) => {
+    const fetchMedia = async (id: string) => {
       const mediaUrl = `https://graph.instagram.com/${id}?access_token=${accessToken}&fields=media_url,permalink`;
 
       const res = await fetch(mediaUrl);
       const json = await res.json();
 
-      const instaItem = {
+      const instaItem: InstaItem = {
         permalink: json.permalink,
         mediaUrl: json.media_url,
       };
@@ -32,9 +33,8 @@ const InstaFeed = () => {
         return;
       }
 
-      const res = await fetch(instaUrl);
-      const json = (await res.json()).data;
-      console.log(json);
+      const res: Response = await fetch(instaUrl);
+      const json: InstaImageId[] = (await res.json()).data;
 
       const fetchedItems = [];
 
