@@ -4,9 +4,11 @@ import { InstaGridProps } from "../../../interfaces/InstaFeed";
 
 import "./InstaGrid.css";
 
+import pizza from "../../../assets/pizza.png"
+
 const InstaGrid = ({ items }: InstaGridProps) => {
   if (items.length === 0) {
-    return <div>{new Array(3).fill(<h1>Placeholder</h1>)}</div>;
+    return <div className="grid-style">{new Array(3).fill(<img className="item-style" src={pizza} alt="placeholder" />)}</div>;
   }
 
   return (
