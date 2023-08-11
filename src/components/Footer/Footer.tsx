@@ -1,9 +1,48 @@
-import React from 'react'
+import React from "react";
+
+import "./Footer.css";
+
+import { NavLink } from "react-router-dom";
+import GoogleMaps from "../GoogleMaps/GoogleMaps";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className="section-footer">
+      <div className="container">
+        <div className="grid-container">
+          <div className="footer-grid-item">
+            <NavLink className="footer-link" to={"/"}>
+              Home
+            </NavLink>
+            <NavLink className="footer-link" to={"/menu"}>
+              Menu
+            </NavLink>
+            <NavLink className="footer-link" to={"/contact"}>
+              Contact
+            </NavLink>
+            <button className="footer-button">Book a table</button>
+            <a
+              className="footer-link"
+              href="https://www.instagram.com/ryanjsmillie/"
+            >
+              Follow us on Instragram
+            </a>
+          </div>
+          <div className="footer-grid-item">
+            <div className="footer-text-container">
+              <h3 className="footer-text">Where to find us.</h3>
+              <p className="footer-text">Sebastianspl. 3, </p>
+              <p className="footer-text">80331,</p>
+              <p className="footer-text"> München</p>
+            </div>
+          </div>       
+            <div className="footer-grid-item map">
+              <GoogleMaps />
+            </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
