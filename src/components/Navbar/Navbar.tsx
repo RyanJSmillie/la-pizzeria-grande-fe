@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="nav-bar">
           <Link to="/">
             <div className="title">
-              <img src={logo} alt="logo" width={150} />
+              <img src={logo} alt="logo" className="nav-image" />
               <h1>La Pizzeria Grande</h1>
             </div>
           </Link>
@@ -49,9 +49,9 @@ const Navbar = () => {
 
           <div className="hamburger" onClick={handleClick}>
             {click ? (
-              <FaTimes size={50} style={{ color: "#f4632f" }} />
+              <FaTimes size={40} style={{ color: "#f4632f" }} />
             ) : (
-              <FaBars size={50} style={{ color: "#f4632f" }} />
+              <FaBars size={40} style={{ color: "#f4632f" }} />
             )}
           </div>
         </div>
