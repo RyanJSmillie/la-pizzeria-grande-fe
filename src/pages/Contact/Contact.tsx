@@ -10,10 +10,11 @@ const Contact = () => {
       <div className="contact-content">
         <h1 className="heading-primary">Contact Us</h1>
         <h1 className="enquiry-text sub-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sint
-          exercitationem a dolore repellat, assumenda qui quibusdam laudantium
-          commodi atque natus mollitia, quam tenetur labore, nesciunt ex?
-          Sapiente, ipsum voluptate?
+          For enquiries about large bookings, please use our bookings page. For
+          site related enquiries, including front of house enquiries – such as
+          lost property or any other general queries, please use the contact form below. For media enquiries,
+          please drop us a line on Instagram where a member of the team will
+          pick up your enquiry.
         </h1>
         <ContactForm />
       </div>

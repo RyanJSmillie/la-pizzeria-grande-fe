@@ -4,6 +4,7 @@ import "./Footer.css";
 
 import { NavLink } from "react-router-dom";
 import GoogleMaps from "../GoogleMaps/GoogleMaps";
+import BookTable from "../BookTable/BookTable";
 
 const Footer = () => {
   return (
@@ -26,7 +27,7 @@ const Footer = () => {
             >
               Follow us on Instragram
             </a>
-            <button className="footer-button">Book a table</button>
+            <BookTable />
           </div>
           <div className="footer-grid-item">
             <div className="footer-text-container">
@@ -35,10 +36,10 @@ const Footer = () => {
               <p className="footer-text">80331,</p>
               <p className="footer-text"> München</p>
             </div>
-          </div>       
-            <div className="footer-grid-item map">
-              <GoogleMaps />
-            </div>
+          </div>
+          <div className="footer-grid-item map">
+            <GoogleMaps />
+          </div>
         </div>
       </div>
     </div>

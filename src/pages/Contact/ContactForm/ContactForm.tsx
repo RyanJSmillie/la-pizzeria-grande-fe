@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./ContactForm.css";
 
 const ContactForm = () => {
+  const [emailSubject, setEmailSubject] = useState("");
+  const [emailBody, setEmailBody] = useState("");
+
   return (
     <div>
       <div className="form">
@@ -23,20 +26,33 @@ const ContactForm = () => {
             <div className="form-field">
               <div>
                 <label>Subject</label>
-                <input type="text" name="subject" />
+                <input
+                  type="text"
+                  name="subject"
+                  onChange={(e) => setEmailSubject(e.target.value)}
+                />
               </div>
             </div>
 
             <div className="form-field">
               <div>
                 <label>Message</label>
-                <textarea name="message" />
+                <textarea
+                  name="message"
+                  onChange={(e) => setEmailBody(e.target.value)}
+                />
               </div>
             </div>
           </form>
         </>
 
-        <button>Submit</button>
+        <button>
+          <a
+            href={`mailto:sayHello@lapizzeriagrande.com?subject=${emailSubject}&body=${emailBody}`}
+          >
+            Submit
+          </a>
+        </button>
       </div>
     </div>
   );
