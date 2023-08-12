@@ -20,7 +20,7 @@ const Menu = () => {
     };
 
     doFetch();
-  }, [databaseUrl]);
+  }, []);
 
   return (
     <div className="section">
