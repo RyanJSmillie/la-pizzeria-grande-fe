@@ -6,12 +6,19 @@ import logo from "../../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
 
 import "./Navbar.css";
+import BookTable from "../BookTable/BookTable";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
 
-  const handleClick = () => {
-    setClick(!click);
+  console.log(click);
+
+  const closeNav = () => {
+    setClick(false);
+  };
+
+  const openNav = () => {
+    setClick(true);
   };
 
   return (
@@ -26,28 +33,28 @@ const Navbar = () => {
           </Link>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li onClick={handleClick}>
+            <li onClick={closeNav}>
               <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
             </li>
-            <li onClick={handleClick}>
+            <li onClick={closeNav}>
               <NavLink to="/menu" className="nav-link">
                 Menu
               </NavLink>
             </li>
-            <li onClick={handleClick}>
+            <li onClick={closeNav}>
               <NavLink to="/contact" className="nav-link">
                 Contact
               </NavLink>
             </li>
 
-            <li onClick={handleClick}>
-              <button>Book a Table</button>
+            <li onClick={closeNav}>
+              <BookTable />
             </li>
           </ul>
 
-          <div className="hamburger" onClick={handleClick}>
+          <div className="hamburger" onClick={openNav}>
             {click ? (
               <FaTimes size={40} style={{ color: "#f4632f" }} />
             ) : (
