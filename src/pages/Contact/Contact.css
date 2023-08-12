@@ -32,6 +32,14 @@
   font-size: 17px;
 }
 
+.menu-img {
+  background-image: url("../../assets/contact-image.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
 @media screen and (max-width: 650px) {
   .enquiry-text {
     font-size: 14px;
