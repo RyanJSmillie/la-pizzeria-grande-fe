@@ -23,8 +23,8 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className="section">
-      <h1 className="heading-menu">Menu</h1>
+    <div className="section menu-img">
+      <h1 className="heading-primary heading-menu">Menu</h1>
       <div className="container menu">
         {menuData.map((data, i, menuData) => {
           return (

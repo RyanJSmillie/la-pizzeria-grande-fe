@@ -10,6 +10,7 @@
   padding: 5px 10px;
   max-width: 80vw;
   margin: auto;
+  background-color: var(--color-primary);
 }
 
 .menu h1 {
@@ -22,7 +23,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-text);
   font-size: 45px;
   padding-bottom: 15px;
+  max-width: 40vw;
+  margin: 20px auto;
 }
