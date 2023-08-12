@@ -1,0 +1,47 @@
+.contact-img {
+  height: 100vh;
+  background-image: url("../../assets/contact-image.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, 0);
+  top: 25%;
+  left: 50%;
+  width: 70vw;
+}
+
+.contact-content p {
+  font-size: 20px;
+}
+
+.contact-content .phone-number {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.enquiry-text {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 650px) {
+  .enquiry-text {
+    font-size: 14px;
+  }
+
+  .contact-content {
+    top: 20%;
+  }
+
+  .contact-img {
+    height: 120vh;
+  }
+}
