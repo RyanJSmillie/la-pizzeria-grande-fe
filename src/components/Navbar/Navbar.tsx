@@ -11,8 +11,6 @@ import BookTable from "../BookTable/BookTable";
 const Navbar = () => {
   const [click, setClick] = useState(false);
 
-  console.log(click);
-
   const closeNav = () => {
     setClick(false);
   };
