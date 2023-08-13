@@ -11,6 +11,7 @@
   max-width: 80vw;
   margin: auto;
   background-color: var(--color-primary);
+  margin-top: 25px;
 }
 
 .menu h1 {
@@ -27,4 +28,8 @@
   padding-bottom: 15px;
   max-width: 40vw;
   margin: 20px auto;
+}
+
+.menu-lead {
+  font-size: 55px;
 }
