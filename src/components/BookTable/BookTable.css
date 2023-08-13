@@ -51,7 +51,7 @@
 }
 
 .modal-form-field label {
-    color: var(--color-text);
+  color: var(--color-text);
 }
 
 .submit-button {
@@ -59,11 +59,11 @@
 }
 
 .react-calendar__navigation__label {
-  color: black;
+  color: var(--color-black);
 }
 
 .react-calendar__tile {
-  color: black;
+  color: var(--color-black);
 }
 
 .react-calendar__tile--now {
@@ -73,6 +73,32 @@
 .react-calendar {
   transform: translate(-20%, 0%);
 }
+
+.react-calendar__navigation button {
+  color: var(--color-black);
+}
+
+.grid-item h3 {
+  font-size: 15px;
+}
+
+.react-datetime-picker__inputGroup__input {
+  color: var(--color-calendar) !important;
+}
+
+.react-datetime-picker__inputGroup__divider {
+  color: var(--color-calendar) !important;
+}
+
+
+.react-datetime-picker__button:enabled {
+  color: var(--color-calendar) !important;
+}
+
+.react-datetime-picker__button svg {
+  background-color: var(--color-secondary) !important;
+}
+
 
 @media screen and (max-width: 940px) {
   .grid-item h3 {
@@ -90,5 +116,19 @@
 
   .modal-heading {
     font-size: 30px;
+  }
+
+  .modal-form-field {
+    max-width: 60vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid-item h3 {
+    font-size: 11px;
+  }
+
+  .modal {
+    top: 55%;
   }
 }
