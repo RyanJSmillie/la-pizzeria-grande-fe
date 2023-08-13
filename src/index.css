@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:wght@400;700&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:wght@400;700&family=Pacifico&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,8 +10,32 @@
   --color-secondary: #f4632f;
   --color-tertiary: #f8b698;
   --color-text: #f4632f;
+  --color-highlight-text: #fcfbec;
   --color-white: #fff;
   --color-black: #000;
+  --color-calendar: #000;
+}
+
+html[data-theme="light"] {
+  --color-primary: #fcfbec;
+  --color-secondary: #f4632f;
+  --color-tertiary: #f8b698;
+  --color-text: #f4632f;
+  --color-highlight-text: #fcfbec;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-calendar: #000;
+}
+
+html[data-theme="dark"] {
+  --color-primary: #020311;
+  --color-secondary: #0ea5d8;
+  --color-tertiary: #80c8e0;
+  --color-text: #0ea5d8;
+  --color-highlight-text: #0ea5d8;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-calendar: #fff;
 }
 
 .title {
@@ -41,7 +65,7 @@
 }
 
 body {
-  font-family: 'Courier Prime', monospace;
+  font-family: "Courier Prime", monospace;
   background-color: var(--color-primary);
 }
 
@@ -78,20 +102,20 @@ button:hover {
 }
 
 .heading-primary {
-  color: var(--color-primary);
+  color: var(--color-highlight-text);
   font-size: 60px;
   font-weight: 300;
   line-height: 1.1;
   padding: 10px;
   margin-bottom: 10px;
   font-family: "Pacifico", cursive;
-  border: 3px dashed var(--color-primary);
+  border: 3px dashed var(--color-highlight-text);
   text-align: center;
   border-radius: 5px;
 }
 
 .sub-text {
-  color: var(--color-primary);
+  color: var(--color-highlight-text);
   font-size: 60px;
   font-weight: 300;
   line-height: 1.1;
