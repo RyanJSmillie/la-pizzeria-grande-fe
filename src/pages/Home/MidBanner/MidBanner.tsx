@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./MidBanner.css";
+import "./MidBanner.scss";
 
 const MidBanner = () => {
   return (

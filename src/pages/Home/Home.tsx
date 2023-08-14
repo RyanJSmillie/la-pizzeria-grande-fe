@@ -2,7 +2,7 @@ import React from "react";
 
 import Hero from "./Hero/Hero";
 
-import "./Home.css";
+import "./Home.scss";
 import InstaFeed from "./InstaFeed/InstaFeed";
 import MidBanner from "./MidBanner/MidBanner";
 

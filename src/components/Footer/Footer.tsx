@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Footer.css";
+import "./Footer.scss";
 
 import { NavLink } from "react-router-dom";
 import GoogleMaps from "../GoogleMaps/GoogleMaps";
