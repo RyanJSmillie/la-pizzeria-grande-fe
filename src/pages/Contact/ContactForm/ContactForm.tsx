@@ -9,42 +9,40 @@ const ContactForm = () => {
   return (
     <div>
       <div className="form">
-        <>
-          <form>
-            <div className="form-field name-email">
-              <div>
-                <label>Name</label>
-                <input type="text" name="name" />
-              </div>
-
-              <div>
-                <label>Email</label>
-                <input type="email" name="email" />
-              </div>
+        <form>
+          <div className="form-field name-email">
+            <div data-testid="form-name">
+              <label>Name</label>
+              <input type="text" name="name" />
             </div>
 
-            <div className="form-field">
-              <div>
-                <label>Subject</label>
-                <input
-                  type="text"
-                  name="subject"
-                  onChange={(e) => setEmailSubject(e.target.value)}
-                />
-              </div>
+            <div data-testid="form-email">
+              <label>Email</label>
+              <input type="email" name="email" />
             </div>
+          </div>
 
-            <div className="form-field">
-              <div>
-                <label>Message</label>
-                <textarea
-                  name="message"
-                  onChange={(e) => setEmailBody(e.target.value)}
-                />
-              </div>
+          <div className="form-field">
+            <div data-testid="form-subject">
+              <label>Subject</label>
+              <input
+                type="text"
+                name="subject"
+                onChange={(e) => setEmailSubject(e.target.value)}
+              />
             </div>
-          </form>
-        </>
+          </div>
+
+          <div className="form-field">
+            <div data-testid="form-message">
+              <label>Message</label>
+              <textarea
+                name="message"
+                onChange={(e) => setEmailBody(e.target.value)}
+              />
+            </div>
+          </div>
+        </form>
 
         <button>
           <a

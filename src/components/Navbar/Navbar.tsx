@@ -13,7 +13,12 @@ import BookTable from "../BookTable/BookTable";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light")
+  );
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -47,7 +52,7 @@ const Navbar = () => {
           </Link>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li>
+            <li data-testid="dark-mode">
               {theme === "light" ? (
                 <BsFillMoonStarsFill
                   onClick={() => {
