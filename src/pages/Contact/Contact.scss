@@ -17,27 +17,19 @@
   top: 25%;
   left: 50%;
   width: 70vw;
-}
 
-.contact-content p {
-  font-size: 20px;
-}
+  p {
+    font-size: 20px;
+  }
 
-.contact-content .phone-number {
-  text-decoration: underline;
-  font-weight: 700;
+  .phone-number {
+    text-decoration: underline;
+    font-weight: 700;
+  }
 }
 
 .enquiry-text {
   font-size: 17px;
-}
-
-.menu-img {
-  background-image: url("../../assets/contact-image.jpeg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  position: relative;
 }
 
 @media screen and (max-width: 650px) {

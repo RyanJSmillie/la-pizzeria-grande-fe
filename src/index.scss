@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:wght@400;700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Pacifico&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,22 +18,22 @@ $white: #fff;
 $black: #000;
 
 html[data-theme="light"] {
-  --color-primary: #fcfbec;
-  --color-secondary: #f4632f;
-  --color-tertiary: #f8b698;
-  --color-text: #f4632f;
-  --color-highlight-text: #fcfbec;
+  --color-primary: #{$primary-light};
+  --color-secondary: #{$secondary-light};
+  --color-tertiary: #{$tertiary-light};
+  --color-text: #{$secondary-light};
+  --color-highlight-text: #{$primary-light};
   --color-white: $white;
   --color-black: $black;
   --color-calendar: $black;
 }
 
 html[data-theme="dark"] {
-  --color-primary: #020311;
-  --color-secondary: #0ea5d8;
-  --color-tertiary: #80c8e0;
-  --color-text: #0ea5d8;
-  --color-highlight-text: #0ea5d8;
+  --color-primary: #{$primary-dark};
+  --color-secondary: #{$secondary-dark};
+  --color-tertiary: #{$tertiary-dark};
+  --color-text: #{$secondary-dark};
+  --color-highlight-text: #{$secondary-dark};
   --color-white: $white;
   --color-black: $black;
   --color-calendar: $white;

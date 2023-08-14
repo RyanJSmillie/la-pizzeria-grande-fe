@@ -24,10 +24,10 @@
   padding: 10px 0;
 
   transition: all, 0.5, ease;
-}
 
-.footer-link:hover {
-  color: var(--color-tertiary);
+  &:hover {
+    color: var(--color-tertiary);
+  }
 }
 
 .footer-text-container {

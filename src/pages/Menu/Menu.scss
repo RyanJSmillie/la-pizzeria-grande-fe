@@ -3,6 +3,14 @@
   padding-bottom: 10vh;
 }
 
+.menu-img {
+  background-image: url("../../assets/contact-image.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
 .menu {
   border: 3px dashed var(--color-secondary);
   margin: 10px;
@@ -12,11 +20,11 @@
   margin: auto;
   background-color: var(--color-primary);
   margin-top: 25px;
-}
 
-.menu h1 {
-  text-align: center;
-  padding-bottom: 25px;
+  h1 {
+    text-align: center;
+    padding-bottom: 25px;
+  }
 }
 
 .heading-menu {
