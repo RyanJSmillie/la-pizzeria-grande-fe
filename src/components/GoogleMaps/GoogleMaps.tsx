@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import { useMemo } from "react";
-import "./GoogleMaps.css";
+import "./GoogleMaps.scss";
 
 import pizza from "../../assets/pizza-small.png";
 

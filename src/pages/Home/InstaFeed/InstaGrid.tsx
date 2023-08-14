@@ -2,7 +2,7 @@ import React from "react";
 
 import { InstaGridProps } from "../../../interfaces/InstaFeed";
 
-import "./InstaGrid.css";
+import "./InstaGrid.scss";
 
 import pizza from "../../../assets/pizza.png";
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "./Menu.css";
+import "./Menu.scss";
 
 import ListItem from "../../components/ListItem/ListItem";
 import { MenuData } from "../../interfaces/Menu";

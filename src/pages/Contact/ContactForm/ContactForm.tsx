@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./ContactForm.css";
+import "./ContactForm.scss";
 
 const ContactForm = () => {
   const [emailSubject, setEmailSubject] = useState("");
