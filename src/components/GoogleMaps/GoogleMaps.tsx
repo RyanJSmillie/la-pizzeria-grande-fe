@@ -126,7 +126,7 @@ const GoogleMaps = () => {
                     },
                   ],
                 }
-              : {styles: []}
+              : { styles: [] }
           }
         >
           <Marker

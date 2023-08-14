@@ -12,10 +12,14 @@ const ListItem = ({ title, description, price, itemImage, last }) => {
 
           <div className="description-container">
             <h3 className="title-menu">{title}</h3>
-            {description && <p className="sub-title-menu">{description}</p>}
+            {description && (
+              <p className="sub-title-menu" data-testid="menu-description">
+                {description}
+              </p>
+            )}
           </div>
           <div className="price-container">
-            <h3 className="price-menu">€{price}</h3>
+            <h3 className="price-menu" data-testid="menu-price">€{price}</h3>
           </div>
         </li>
       </ul>

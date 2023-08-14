@@ -9,7 +9,7 @@ import pizza from "../../../assets/pizza.png";
 const InstaGrid = ({ items }: InstaGridProps) => {
   if (items.length === 0) {
     return (
-      <div className="grid-style">
+      <div className="grid-style" data-testid="instaContainer">
         {Array.from({ length: 3 }, (_, i) => (
           <img className="item-style" src={pizza} alt="placeholder" key={i} />
         ))}
@@ -18,7 +18,7 @@ const InstaGrid = ({ items }: InstaGridProps) => {
   }
 
   return (
-    <div className="grid-style">
+    <div className="grid-style" data-testid="instaContainer">
       {items.map((item) => {
         return (
           <img

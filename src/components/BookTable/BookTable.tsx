@@ -56,7 +56,7 @@ const BookTable = () => {
           </div>
           <div className="grid-item calendar">
             <form>
-              <div className="modal-form-field name">
+              <div className="modal-form-field name" data-testid="form-name">
                 <label>Name</label>
                 <input
                   type="text"
@@ -64,7 +64,7 @@ const BookTable = () => {
                   onChange={(e) => setName(e.target.value)}
                 ></input>
               </div>
-              <div className="modal-form-field diet">
+              <div className="modal-form-field diet" data-testid="form-diet">
                 <label>Dietary Requirements</label>
                 <input
                   type="text"
@@ -81,6 +81,15 @@ const BookTable = () => {
                 Submit
               </a>
             </button>
+
+            {/* <iframe
+              src="https://tableagent.com/iframe/pizzeria-grano/"
+              // style={{border:0, none, min-width:375px, min-height:736px}}
+              sandbox="allow-forms allow-modals allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+              width="100%"
+              height="100%"
+              className="reservation"
+             /> */}
           </div>
         </div>
         <div className="modal-button">

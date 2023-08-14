@@ -27,7 +27,7 @@ const Menu = () => {
     <div className="section menu-img">
       <h1 className="heading-primary heading-menu">Menu</h1>
       <div className="container menu">
-      <h1 className="menu-lead title">Pizza</h1>
+        <h1 className="menu-lead title">Pizza</h1>
         {menuData.pizza.map((data, i, menuData) => {
           return (
             <ListItem
@@ -42,7 +42,7 @@ const Menu = () => {
         })}
       </div>
       <div className="container menu">
-      <h1 className="menu-lead title">Drinks</h1>
+        <h1 className="menu-lead title">Drinks</h1>
         {menuData.drinks.map((data, i, menuData) => {
           return (
             <ListItem

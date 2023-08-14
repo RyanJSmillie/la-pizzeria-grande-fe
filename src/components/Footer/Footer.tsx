@@ -25,7 +25,7 @@ const Footer = () => {
               className="footer-link"
               href="https://www.instagram.com/ryanjsmillie/"
             >
-              Follow us on Instragram
+              Follow us on Instagram
             </a>
             <BookTable />
           </div>
