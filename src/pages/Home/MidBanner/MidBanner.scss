@@ -1,42 +1,41 @@
 .mid-banner {
-    background-color: var(--color-primary);
-    border-top: 3px dashed var(--color-secondary);
-  }
-  
-  .mid-title {
-      padding: 10px 0;
-      max-width: 60%;
-      margin: auto;
-  }
-  
-  .mid-title h1 {
+  background-color: var(--color-primary);
+  border-top: 3px dashed var(--color-secondary);
+}
+
+.mid-title {
+  padding: 10px 0;
+  max-width: 60%;
+  margin: auto;
+
+  h1 {
     font-size: 45px;
     text-align: center;
     padding-top: 25px;
   }
-  
-  .mid-title-box a {
+}
+
+.mid-title-box {
+  padding: 5px 0;
+  max-width: 40%;
+  margin: 15px auto;
+  border: 3px dashed var(--color-secondary);
+  cursor: pointer;
+  border-radius: 5px;
+
+  a {
     font-size: 30px;
   }
-  
-  .mid-title-box {
-    padding: 5px 0;
-    max-width: 40%;
-    margin: 15px auto;
-    border: 3px dashed var(--color-secondary);
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  
-  @media screen and (max-width: 940px) {
-    .mid-title-box {
-      max-width: 80%;
-    }
-  }
+}
 
-  @media screen and (max-width: 400px) {
-    .mid-title h1 {
-      font-size: 30px;
-    }
+@media screen and (max-width: 940px) {
+  .mid-title-box {
+    max-width: 80%;
   }
+}
+
+@media screen and (max-width: 400px) {
+  .mid-title h1 {
+    font-size: 30px;
+  }
+}

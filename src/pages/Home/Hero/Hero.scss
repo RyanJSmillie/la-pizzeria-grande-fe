@@ -1,6 +1,8 @@
+$home-image: url("../../../assets/home-image.jpg");
+
 .hero-img {
   height: 90vh;
-  background-image: url("../../../assets/home-image.jpg");
+  background-image: $home-image;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -16,12 +18,13 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-}
 
-.hero-content p {
-  font-size: 20px;
-}
- .hero-content .phone-number {
+  p {
+    font-size: 20px;
+  }
+
+  .phone-number {
     text-decoration: underline;
     font-weight: 700;
- }
+  }
+}

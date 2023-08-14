@@ -26,11 +26,12 @@
   padding: 0 15px;
   display: flex;
   flex-direction: column;
-}
 
-.grid-item h3 {
-  text-align: left;
-  padding: 10px 0;
+  h3 {
+    text-align: left;
+    padding: 10px 0;
+    font-size: 15px;
+  }
 }
 
 .modal-heading {
@@ -48,10 +49,10 @@
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-}
 
-.modal-form-field label {
-  color: var(--color-text);
+  label {
+    color: var(--color-text);
+  }
 }
 
 .submit-button {
@@ -78,10 +79,6 @@
   color: var(--color-black);
 }
 
-.grid-item h3 {
-  font-size: 15px;
-}
-
 .react-datetime-picker__inputGroup__input {
   color: var(--color-calendar) !important;
 }
@@ -89,7 +86,6 @@
 .react-datetime-picker__inputGroup__divider {
   color: var(--color-calendar) !important;
 }
-
 
 .react-datetime-picker__button:enabled {
   color: var(--color-calendar) !important;
@@ -99,12 +95,7 @@
   background-color: var(--color-secondary) !important;
 }
 
-
 @media screen and (max-width: 940px) {
-  .grid-item h3 {
-    font-size: 15px;
-  }
-
   .grid-item {
     max-width: 100%;
     padding-bottom: 15px;
