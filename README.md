@@ -8,8 +8,7 @@ Front-end React project for BurdaForward tech test "la pizzeria grande"
 
 ## General Information
 
-First version of a portfolio page for a new hipster pizza restaurant in the heart of the Bavarian capital.\
-Produced for a tech-test for BurdaForward.
+First version of a portfolio page for a new hipster pizza restaurant in the heart of the Bavarian capital.
 
 ## Technologies Used
 
@@ -32,7 +31,7 @@ Produced for a tech-test for BurdaForward.
 
 In progress
 
-## Improvements 
+## Improvements
 
 - Add further test coverage
 
@@ -42,9 +41,19 @@ In progress
 - More elegant solution for Contage page i.e "Mailchimp"
 - Link directly with reservation software
 
-### Setup
+# Setup
 
 Dependencies are listed in `package.json` and can be installed with `npm i`.
+
+## Environment Variables
+
+You will need to create a `.env` file in the root of the project and provide the following credentials:
+
+```
+REACT_APP_INSTAGRAM_ACCESS_CODE=
+REACT_APP_INSTAGRAM_USER_ID=
+REACT_APP_GOOGLE_API_KEY=
+```
 
 ## Available Scripts
 
