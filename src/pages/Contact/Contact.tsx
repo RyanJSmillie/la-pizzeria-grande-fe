@@ -3,6 +3,7 @@ import React from "react";
 import "./Contact.scss";
 
 import ContactForm from "./ContactForm/ContactForm";
+import GoogleMaps from "../../components/GoogleMaps/GoogleMaps";
 
 const Contact = () => {
   return (
@@ -17,6 +18,9 @@ const Contact = () => {
           pick up your enquiry.
         </h1>
         <ContactForm />
+      <div className="contact-map">
+            <GoogleMaps />
+          </div>
       </div>
     </div>
   );

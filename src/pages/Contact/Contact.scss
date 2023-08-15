@@ -1,5 +1,5 @@
 .contact-img {
-  height: 100vh;
+  height: 110vh;
   background-image: url("../../assets/contact-image.jpeg");
   background-repeat: no-repeat;
   background-position: top;
@@ -14,7 +14,7 @@
   flex-direction: column;
   position: absolute;
   transform: translate(-50%, 0);
-  top: 25%;
+  top: 22%;
   left: 50%;
   width: 70vw;
 
@@ -32,16 +32,25 @@
   font-size: 17px;
 }
 
+.contact-map {
+  display: none;
+}
+
 @media screen and (max-width: 650px) {
+  .contact-map {
+    display: block;
+    padding-top: 25px;
+  }
+
   .enquiry-text {
     font-size: 14px;
   }
 
   .contact-content {
-    top: 20%;
+    top: 13%;
   }
 
   .contact-img {
-    height: 130vh;
+    height: 160vh;
   }
 }
