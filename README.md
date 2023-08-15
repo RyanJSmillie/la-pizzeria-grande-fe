@@ -1,6 +1,50 @@
-# Getting Started with Create React App
+# La Pizzeria Grande
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Front-end Application
+
+Front-end React project for BurdaForward tech test "la pizzeria grande"
+
+![Home Screen](src/assets/home-page-screenshot.png?raw=true)
+
+## General Information
+
+First version of a portfolio page for a new hipster pizza restaurant in the heart of the Bavarian capital.\
+Produced for a tech-test for BurdaForward.
+
+## Technologies Used
+
+- React
+- TypeScript
+- JavaScript
+- SASS/SCSS
+- Dotenv
+- Jest-DOM
+
+## Features
+
+- Live Instagram Feed
+- Google Maps Integration
+- Contact Form
+- Table Reservation
+- Dark Mode
+
+## Project Status
+
+In progress
+
+## Improvements 
+
+- Add further test coverage
+
+## Features that can be Added
+
+- Cart feature for ordering food online
+- More elegant solution for Contage page i.e "Mailchimp"
+- Link directly with reservation software
+
+### Setup
+
+Dependencies are listed in `package.json` and can be installed with `npm i`.
 
 ## Available Scripts
 
@@ -16,8 +60,20 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner and runs all available tests in the interactive watch mode.\
+To run test files individually you can run the command `npm run test` followed by one of the available test-file names.
+
+Test-files available:
+
+```
+    Footer.test.js
+    Navabar.test.js
+    ContactForm.test.js
+    InstaGrid.test.js
+    MidBanner.test.js
+    ListItem.test.js
+    Hero.test.js
+```
 
 ### `npm run build`
 
@@ -26,8 +82,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -39,32 +93,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
