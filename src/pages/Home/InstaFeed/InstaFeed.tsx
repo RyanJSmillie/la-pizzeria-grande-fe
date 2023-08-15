@@ -5,8 +5,8 @@ import { InstaImageId, InstaItem } from "../../../interfaces/InstaFeed";
 const InstaFeed = () => {
   const [instaItems, setInstaItems] = useState([]);
 
-  const userId = process.env.REACT_APP_USER_ID;
-  const accessToken = process.env.REACT_APP_ACCESS_CODE;
+  const userId = process.env.REACT_APP_INSTAGRAM_USER_ID;
+  const accessToken = process.env.REACT_APP_INSTAGRAM_ACCESS_CODE;
   const instaUrl = `https://graph.instagram.com/${userId}/media?access_token=${accessToken}`;
 
   useEffect(() => {
