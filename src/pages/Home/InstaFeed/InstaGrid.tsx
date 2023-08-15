@@ -18,17 +18,19 @@ const InstaGrid = ({ items }: InstaGridProps) => {
   }
 
   return (
-    <div className="grid-style" data-testid="instaContainer">
-      {items.map((item) => {
-        return (
-          <img
-            className="item-style"
-            src={item.mediaUrl}
-            alt="instagram"
-            key={item.permalink}
-          />
-        );
-      })}
+    <div className="insta-container">
+      <div className="grid-style" data-testid="instaContainer">
+        {items.map((item) => {
+          return (
+            <img
+              className="item-style"
+              src={item.mediaUrl}
+              alt="instagram"
+              key={item.permalink}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
