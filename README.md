@@ -42,7 +42,7 @@ In progress
 - More elegant solution for Contage page i.e "Mailchimp"
 - Link directly with reservation software
 
-### Setup
+# Setup
 
 Dependencies are listed in `package.json` and can be installed with `npm i`.
 
